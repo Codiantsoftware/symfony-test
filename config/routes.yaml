@@ -1,0 +1,30 @@
+api_login_check:
+    path: /api/login_check
+
+user_login:
+    path: /api/login
+    controller: App\Controller\AuthController::login
+ 
+user_register:
+    path: /api/register
+    controller: App\Controller\AuthController::register
+
+user_create:
+    path: /api/create
+    controller: App\Controller\UserController::create
+ 
+user_update:
+    path: /api/update/{id}
+    controller: App\Controller\UserController::update
+
+user_view:
+    path: /api/view/{id}
+    controller: App\Controller\UserController::view
+
+view_all_user:
+    path: /api/all_user
+    controller: App\Controller\UserController::index
+ 
+user_delete:
+    path: /api/delete/{id}
+    controller: App\Controller\UserController::delete
